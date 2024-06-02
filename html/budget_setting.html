@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Setting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<header>
+    <nav>
+        <div class="logo_container">Logo</div>
+        <div class="links_container">
+            <a href="./budget_setting.html" class="links">Set Budget</a>
+            <a href="expens_entry_form.html" class="links">Add Expense</a>
+            <a href="./budget_summary.html" class="links">Report</a>
+            <a href="./dashbord.html" class="links">Analysis</a>
+            <button id="logout">Log out</button>
+        </div>
+    </nav>
+</header>
+
+    <!-- The budget setting main section -->
+    <main class="bud_setting_main_container">
+        <h1>Plan Your Budget</h1>
+        <form id="bud_setting_form">
+            <div class="month_income_container">
+                <input type="month" id="set_buget_month" name="set_buget_month" class="all_budset_input"> 
+                <input type="number" placeholder="INCOME" id="income" name="income" class="all_budset_input">
+                <select name="" id="currencyType" class="all_budset_input">
+                    <option >$LRD</option>
+                    <option>$USD</option>
+                </select>
+            </div>
+            <!-- The Table in the form -->
+       <table class="bud_table">
+             <thead>
+                <tr>
+                    <th class="al_left">Category</th>
+                    <th>Amount</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="al_left" id="hou">Housing</td>
+                    <td><input type="number" class="inp" id="housing"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Transpotation</td>
+                    <td><input type="number" class="inp" id="transpotation"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Food</td>
+                    <td><input type="number" class="inp" id="food"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Insurance</td>
+                    <td><input type="number" class="inp" id="insurance"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Entertainment</td>
+                    <td><input type="number" class="inp" id="entertainment"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Health Care</td>
+                    <td><input type="number" class="inp" id="healthcare"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Savings</td>
+                    <td><input type="number" class="inp" id="saving"></td>
+                </tr>
+
+                <tr>
+                    <td class="al_left">Mesilunous</td>
+                    <td><input type="number" class="inp" id="mesilunous"></td>
+                </tr>
+
+                <tr>
+                 <td ><button type="submit" class="al-right"> Save and Continue</button></td>
+                </tr>
+            </tbody>
+       </table>
+       
+        </form>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+        bugetSetting();
+    </script>
+</body>
+</html>
